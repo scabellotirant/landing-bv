@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biblioteca Tirant · Elige versión</title>
+<meta name="robots" content="noindex">
+<style>
+  :root{
+    --ink:#171717; --text:#404040; --border:#E5E7EB; --bg:#FFFFFF;
+    --font-display:"Montserrat",system-ui,sans-serif;
+    --font-body:"Open Sans",system-ui,sans-serif;
+  }
+  *{ box-sizing:border-box; }
+  html,body{ height:100%; margin:0; }
+  body{
+    display:flex; align-items:center; justify-content:center;
+    background:var(--bg); color:var(--ink);
+    font:400 1rem/1.5 var(--font-body);
+  }
+  main{ text-align:center; padding:0 24px; }
+  h1{
+    font:600 1rem/1.2 var(--font-display);
+    letter-spacing:.14em; text-transform:uppercase;
+    color:var(--text); margin:0 0 48px;
+  }
+  .choices{
+    display:flex; gap:0; border-top:1px solid var(--border); border-bottom:1px solid var(--border);
+  }
+  .choice{
+    display:block; padding:32px 56px;
+    font:600 1.75rem/1.2 var(--font-display);
+    letter-spacing:-.02em; color:var(--ink);
+    text-decoration:none;
+    transition:background-color .15s ease, color .15s ease;
+  }
+  .choice + .choice{ border-left:1px solid var(--border); }
+  .choice:hover{ background:var(--ink); color:#fff; }
+  .choice:focus-visible{ outline:2px solid var(--ink); outline-offset:-2px; }
+  @media (max-width:600px){
+    .choices{ flex-direction:column; border-left:1px solid var(--border); border-right:1px solid var(--border); }
+    .choice + .choice{ border-left:0; border-top:1px solid var(--border); }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Biblioteca Tirant</h1>
+  <nav class="choices" aria-label="Elegir versión de la landing">
+    <a class="choice" href="classic/index.html">Classic</a>
+    <a class="choice" href="rebel/index.html">Rebel</a>
+  </nav>
+</main>
+</body>
+</html>

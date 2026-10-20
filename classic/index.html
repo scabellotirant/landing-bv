@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biblioteca Tirant · Siempre al alcance de tu mano</title>
+<meta name="description" content="Busca, lee, anota y cita en todo el fondo de Tirant lo Blanch, la editorial jurídica más prestigiosa según el CSIC, desde cualquier dispositivo.">
+<meta name="theme-color" content="#A6093D">
+
+<link rel="icon" type="image/webp" href="assets/img/ico.png">
+
+<!-- TODO: añadir <link rel="canonical"> y og:url cuando se confirme el dominio final -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Biblioteca Tirant · Siempre al alcance de tu mano">
+<meta property="og:description" content="Busca, lee, anota y cita en todo el fondo de Tirant lo Blanch, la editorial jurídica más prestigiosa según el CSIC, desde cualquier dispositivo.">
+<meta property="og:image" content="assets/img/hero-bg.webp">
+<meta property="og:locale" content="es_ES">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Biblioteca Tirant · Siempre al alcance de tu mano">
+<meta name="twitter:description" content="Busca, lee, anota y cita en todo el fondo de Tirant lo Blanch, la editorial jurídica más prestigiosa según el CSIC, desde cualquier dispositivo.">
+<meta name="twitter:image" content="assets/img/hero-bg.webp">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300..800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+
+<!-- Sprite de iconos: una única familia, cuadrícula 24px, trazo 2px -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l4-1 11-11-3-3L5 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="miter"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M5 9h5v5a4 4 0 0 1-4 4H5M14 9h5v5a4 4 0 0 1-4 4h-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="miter"/></symbol>
+    <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 13v4a2 2 0 0 0 2 2h1v-6H5a1 1 0 0 0-1 1zM20 13v4a2 2 0 0 1-2 2h-1v-6h2a1 1 0 0 1 1 1zM4 13a8 8 0 0 1 16 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="miter"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7 9.5 4.25 4.25 0 0 0 7 18z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="miter"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4l9 16H3zM12 10v4M12 17v.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12l6 6L20 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============================== CABECERA ============================== -->
+<header class="site-header">
+  <div class="wrap inner">
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <a href="#guia">Biblioteca Virtual</a>
+      <a href="#transformacion">Resultados</a>
+      <a href="#sofia">SOFIA 4.0</a>
+      <a href="#plan">Cómo empezar</a>
+      <a href="#faq">Preguntas</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-outline btn-sm" href="https://biblioteca.tirant.com/" target="_blank" rel="noopener">Acceder <span class="sr-only">(se abre en una pestaña nueva)</span></a>
+      <a class="btn btn-primary btn-sm" href="https://biblioteca.tirant.com/" target="_blank" rel="noopener">Solicitar información <span class="sr-only">(se abre en una pestaña nueva)</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <svg class="icon" style="--icon-size:22px" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<!-- ============================== HERO ============================== -->
+<section id="top" class="hero-photo on-dark">
+  <div class="hero-photo-bg" aria-hidden="true"></div>
+  <div class="hero-photo-overlay" aria-hidden="true"></div>
+  <div class="wrap hero-photo-inner">
+    <img class="hero-logo" src="assets/img/logo-tirant-white.webp" alt="Tirant · Biblioteca Virtual" width="173" height="33">
+    <h1>La biblioteca jurídica digital de <em class="accent">Tirant</em>, siempre al alcance de tu mano</h1>
+    <p class="lead">Todo el fondo de la editorial jurídica más prestigiosa según el CSIC, actualizado y en un solo sitio. <strong>Busca, lee, anota y cita sin salir de la biblioteca</strong>, desde cualquier dispositivo.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary btn-lg" href="https://biblioteca.tirant.com/" target="_blank" rel="noopener">Solicitar información
+        <span class="sr-only">(se abre en una pestaña nueva)</span>
+        <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+      </a>
+      <a class="btn btn-outline btn-lg" href="#transformacion">Ver qué puedes hacer</a>
+    </div>
+  </div>
+</section>
+
+<!-- Franja de cifras: solo afirmaciones verificables, sin cifras inventadas -->
+<div class="wrap">
+  <div class="stats" role="list" aria-label="Datos de la biblioteca">
+    <div class="stat" role="listitem"><b>CSIC</b><span>La Editorial jurídica y académica mejor valorada según el índice SPI</span></div>
+    <div class="stat" role="listitem"><b>SSO</b><span>Entra como te resulte más cómodo: usuario, institución o red de trabajo</span></div>
+    <div class="stat" role="listitem"><b>24/7</b><span>Biblioteca siempre disponible, desde cualquier dispositivo</span></div>
+  </div>
+</div>
+
+<!-- ============================== PROBLEMA (villano) ============================== -->
+<section class="sec alt" id="problema">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="t-h2">¿Tienes el libro, pero no a mano cuando lo necesitas?</h2>
+      <p class="t-lead t-lead-wide">Sí, y no tiene por qué seguir así: ese tiempo debería ser para el caso, no para buscar.</p>
+    </div>
+
+    <div class="scenes">
+      <div class="scene">
+        <span class="num">01</span>
+        <h3 class="t-h3">No recuerdas en qué obra estaba esa cita</h3>
+        <p>Buscas una referencia concreta y repasas estanterías o PDFs sueltos para encontrarla de nuevo.</p>
+      </div>
+      <div class="scene">
+        <span class="num">02</span>
+        <h3 class="t-h3">Subrayas en papel y luego no lo encuentras</h3>
+        <p>La nota queda en un libro, en un cuaderno o en un documento aparte, nunca en el mismo sitio.</p>
+      </div>
+      <div class="scene">
+        <span class="num">03</span>
+        <h3 class="t-h3">Rehaces la cita bibliográfica a mano</h3>
+        <p>Cada vez que citas una obra, reconstruyes el formato exacto desde cero.</p>
+      </div>
+    </div>
+
+    <p class="t-lead" style="margin-top:var(--s-48);">En Tirant lo sabemos. Por eso creamos <strong>Biblioteca Virtual</strong>.</p>
+  </div>
+</section>
+
+<!-- Banda intensa: lo que está en juego -->
+<div class="band on-brand">
+  <div class="wrap">
+    <span class="label">Lo que está en juego</span>
+    <p class="quote" style="margin-top:var(--s-16); color:#fff;">Cada búsqueda a mano son minutos que no dedicas al caso.</p>
+  </div>
+</div>
+
+<!-- ============================== GUÍA (autoridad) ============================== -->
+<section class="sec" id="guia" style="background:var(--bg-section);">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="t-h2">Tirant ha creado Biblioteca Virtual: la herramienta que busca tus citas, guarda tus notas y genera tus referencias</h2>
+      <p class="t-lead">Creada por la editorial jurídica y académica mejor valorada según el índice SPI del CSIC. Nadie conoce mejor este fondo.</p>
+    </div>
+    <a class="link-arrow" href="https://www.tirant.com" target="_blank" rel="noopener">
+      Conoce el reconocimiento del CSIC a Tirant
+      <span class="sr-only">(se abre en una pestaña nueva)</span>
+      <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ============================== CARACTERÍSTICAS ============================== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Biblioteca Virtual</span>
+      <h2 class="t-h2">Encuentra, anota y cita. Todo al instante</h2>
+    </div>
+    <img class="feat-shot" src="assets/img/devices.webp" alt="Un mismo libro abierto a la vez en escritorio, portátil, tablet y móvil, con notas, búsqueda y marcadores sincronizados" width="1520" height="700" loading="lazy">
+    <div class="features">
+      <div class="feat">
+        <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg></div>
+        <h3 class="t-h3">Búsqueda avanzada</h3>
+        <p>Busca en toda la biblioteca o dentro de cada libro, por título, autor, colección, materia o ISBN.</p>
+      </div>
+      <div class="feat">
+        <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-pen"/></svg></div>
+        <h3 class="t-h3">Notas y subrayados</h3>
+        <p>Marcadores, notas y subrayados quedan en el libro; tus listas de lectura y favoritos, en tu área personal.</p>
+      </div>
+      <div class="feat">
+        <div class="ico"><svg class="icon" aria-hidden="true"><use href="#i-quote"/></svg></div>
+        <h3 class="t-h3">Referencias y citas</h3>
+        <p>Exporta la cita bibliográfica en el sistema de citación que uses, sin rehacerla a mano.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PLAN ============================== -->
+<section class="sec alt" id="plan">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="t-h2">Empezar es sencillo</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3 class="t-h3">Pide información</h3>
+        <p>Cuéntanos tu caso y te ayudamos a elegir entre acceso individual o institucional.</p>
+      </div>
+      <div class="step">
+        <h3 class="t-h3">Entra fácilmente</h3>
+        <p>Con tu usuario, tu institución o tu red de trabajo, como prefieras.</p>
+      </div>
+      <div class="step">
+        <h3 class="t-h3">Busca, lee y anota</h3>
+        <p>Trabaja directamente sobre tu biblioteca de Tirant, desde el primer día.</p>
+      </div>
+    </div>
+    <div class="plan-cta">
+      <a class="btn btn-primary btn-lg" href="https://biblioteca.tirant.com/" target="_blank" rel="noopener">Solicitar información<span class="sr-only"> (se abre en una pestaña nueva)</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== TRANSFORMACIÓN ============================== -->
+<section class="sec" id="transformacion">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Resultados</span>
+      <h2 class="t-h2">Así cambia tu día a día con tu biblioteca de Tirant</h2>
+      <p class="t-lead">Lo que antes te costaba tiempo, ahora lo resuelves al momento.</p>
+    </div>
+
+    <div class="transform-table">
+      <div class="transform-row">
+        <div class="before"><b>Antes</b><p>No sé en qué obra estaba esa cita.</p></div>
+        <div class="after"><b>Después</b><p>Escribes el término y buscas en toda la biblioteca, o por título, autor, colección, materia o ISBN.</p><span class="feature-tag">Buscador avanzado · buscador interno dentro de cada libro</span></div>
+      </div>
+      <div class="transform-row">
+        <div class="before"><b>Antes</b><p>Subrayo y anoto, pero luego no lo encuentro.</p></div>
+        <div class="after"><b>Después</b><p>Notas, marcadores y subrayados quedan en el libro, y tus listas de lectura y favoritos en tu área personal.</p><span class="feature-tag">Editor · personalización</span></div>
+      </div>
+      <div class="transform-row">
+        <div class="before"><b>Antes</b><p>Rehago a mano las citas bibliográficas.</p></div>
+        <div class="after"><b>Después</b><p>Exportas la cita en el sistema de citación que uses.</p><span class="feature-tag">Referencias y citas</span></div>
+      </div>
+      <div class="transform-row">
+        <div class="before"><b>Antes</b><p>No siempre puedo leer con la pantalla delante.</p></div>
+        <div class="after"><b>Después</b><p>Escuchas el libro con lectura en voz alta.</p><span class="feature-tag">Audiolibros (lectura en voz alta)</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SOFIA 4.0 ============================== -->
+<section class="sec on-dark" id="sofia" style="background:#13192E;">
+  <div class="wrap">
+    <div class="sofia-grid">
+      <div>
+        <div class="sec-head" style="margin-bottom:var(--s-24);">
+          <img class="logo-sofia" src="assets/img/logo_sofia_40.webp" alt="SOFIA 4.0 · Inteligencia legal" width="727" height="191">
+          <p class="t-h2 sofia-tagline">SOFIA 4.0<br>INTELIGENCIA ARTIFICIAL</p>
+          <h2 class="t-h3">Consulta con SOFIA sobre todo el fondo de Tirant</h2>
+          <p class="t-lead">SOFIA comprende el contexto, relaciona contenidos y te ayuda a pasar de la consulta al análisis, con el fondo editorial de Tirant detrás.</p>
+        </div>
+        <a class="link-arrow" href="https://biblioteca.tirant.com/" target="_blank" rel="noopener">
+          Descubre SOFIA 4.0
+          <span class="sr-only">(se abre en una pestaña nueva)</span>
+          <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </div>
+      <img class="sofia-shot" src="assets/img/sofia-screen.webp" alt="Pantalla de SOFIA respondiendo a una consulta jurídica con análisis y requisitos legales detallados" width="893" height="606" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FAQ ============================== -->
+<section class="sec alt" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="t-h2">Preguntas antes de decidir</h2>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>¿Qué diferencia hay entre acceso individual e institucional?
+          <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
+        </summary>
+        <p>El acceso individual está pensado para un único profesional; el institucional, para universidades, despachos o colegios profesionales con varios usuarios. Escríbenos para confirmar qué encaja con tu caso.</p>
+      </details>
+      <details>
+        <summary>¿Cómo accedo a la biblioteca?
+          <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
+        </summary>
+        <p>Con usuario y contraseña, mediante Single Sign-On de tu institución o por reconocimiento de IP, según el tipo de acceso contratado.</p>
+      </details>
+      <details>
+        <summary>¿Puedo leer sin conexión?
+          <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
+        </summary>
+        <p>El acceso requiere conexión a internet. Si necesitas lectura sin conexión para tu caso concreto, consúltanoslo al solicitar información.</p>
+      </details>
+      <details>
+        <summary>¿Tengo los libros que ya compré en papel o en ebook?
+          <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
+        </summary>
+        <p>Depende de tu suscripción y del título. Escríbenos con tu caso y te confirmamos qué contenido tienes disponible.</p>
+      </details>
+      <details>
+        <summary>¿Cuántos usuarios simultáneos admite una licencia?
+          <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
+        </summary>
+        <p>Varía según el tipo de licencia individual o institucional. Te lo detallamos al solicitar información.</p>
+      </details>
+      <details>
+        <summary>¿Qué precio tiene?
+          <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
+        </summary>
+        <p>El precio depende del tipo de acceso y del volumen de usuarios. Solicita información y te preparamos una propuesta.</p>
+      </details>
+      <details>
+        <summary>¿SOFIA es fiable en sus respuestas y cita sus fuentes?
+          <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
+        </summary>
+        <p>SOFIA trabaja sobre el fondo editorial de Tirant. Para el detalle de sus fuentes y límites de uso, consúltanoslo al solicitar información.</p>
+      </details>
+      <details>
+        <summary>¿Cómo se actualiza el contenido?
+          <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
+        </summary>
+        <p>El fondo está en continua actualización, con nuevas publicaciones de la editorial incorporadas de forma progresiva.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CTA FINAL ============================== -->
+<div class="band on-wine">
+  <div class="wrap">
+    <div class="hero cta-final-hero">
+      <div>
+        <span class="label">Siempre al alcance de tu mano</span>
+        <h2 class="t-h1" style="margin-top:var(--s-16); color:#fff;">Pide información y te explicamos qué acceso encaja contigo.</h2>
+      </div>
+      <div class="cta-final-actions on-wine">
+        <a class="btn btn-primary btn-lg" href="https://biblioteca.tirant.com/" target="_blank" rel="noopener">Solicitar información<span class="sr-only"> (se abre en una pestaña nueva)</span></a>
+        <a class="btn btn-outline btn-lg" href="#sofia">Saber más de SOFIA</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- ============================== PIE ============================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="logo footer-logo" href="#top">
+          <img src="assets/img/logo-tirant-white.webp" alt="Tirant · Biblioteca Virtual" width="173" height="33">
+        </a>
+        <p style="margin-top:var(--s-12); font-size:var(--fs-small); max-width:32ch;">La biblioteca jurídica de Tirant lo Blanch: todo el fondo de la editorial, en un solo sitio.</p>
+      </div>
+      <div>
+        <h4>Enlaces</h4>
+        <a href="#guia">Biblioteca Virtual</a>
+        <a href="#transformacion">Resultados</a>
+        <a href="#sofia">SOFIA 4.0</a>
+        <a href="#plan">Cómo empezar</a>
+        <a href="#faq">Preguntas frecuentes</a>
+        <a href="https://biblioteca.tirant.com/" target="_blank" rel="noopener">Solicitar información<span class="sr-only"> (se abre en una pestaña nueva)</span></a>
+      </div>
+    </div>
+    <p class="legal">© 2026 Tirant lo Blanch · Todos los derechos reservados</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
