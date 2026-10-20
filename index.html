@@ -12,9 +12,10 @@
     --font-body:"Open Sans",system-ui,sans-serif;
   }
   *{ box-sizing:border-box; }
-  html,body{ height:100%; margin:0; }
+  html,body{ margin:0; }
   body{
-    display:flex; align-items:center; justify-content:center;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    min-height:100vh;
     background:var(--bg); color:var(--ink);
     font:400 1rem/1.5 var(--font-body);
   }
@@ -41,15 +42,33 @@
     .choices{ flex-direction:column; border-left:1px solid var(--border); border-right:1px solid var(--border); }
     .choice + .choice{ border-left:0; border-top:1px solid var(--border); }
   }
+
+  .banner-section{
+    width:100%; margin-top:64px; padding:0 0 64px;
+    text-align:center;
+  }
+  .banner-title{
+    font:600 1rem/1.2 var(--font-display);
+    letter-spacing:.14em; text-transform:uppercase;
+    color:var(--text); margin:0 0 24px;
+  }
+  .banner-section img{
+    display:block; width:100%; height:auto; max-width:1920px; margin:0 auto;
+  }
 </style>
 </head>
 <body>
 <main>
   <h1>Biblioteca Tirant</h1>
   <nav class="choices" aria-label="Elegir versión de la landing">
-    <a class="choice" href="classic/index.html">Classic </a>
+    <a class="choice" href="classic/index.html">Classic</a>
     <a class="choice" href="rebel/index.html">Rebel</a>
   </nav>
 </main>
+
+<section class="banner-section">
+  <h2 class="banner-title">Banner Home E-commerce editorial</h2>
+  <img src="img/BANNER-BV-desktop.png" alt="Banner promocional de Biblioteca Virtual para la home del e-commerce de Tirant lo Blanch" width="1920" height="400">
+</section>
 </body>
 </html>
